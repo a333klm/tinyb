@@ -75,7 +75,7 @@ ENDIF(DEBUG)
 find_path (SYSTEM_USR_DIR "stdlib.h")
 include_directories (${SYSTEM_USR_DIR})
 
-option (BUILDJAVA "Build Java API." OFF)
+option (BUILDJAVA "Build Java API." ON)
 
 IF(BUILDJAVA)
     configure_file (${CMAKE_CURRENT_SOURCE_DIR}/java/manifest.txt.in ${CMAKE_CURRENT_BINARY_DIR}/java/manifest.txt)
