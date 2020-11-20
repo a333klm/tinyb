@@ -13,7 +13,7 @@ endif ()
 
 # Check that we can use javah
 if(NOT Java_JAVAH_EXECUTABLE)
-    message(FATAL_ERROR "Cannot locate javah executable.")
+    set (Java_JAVAH_EXECUTABLE  /opt/jdk/bin/javac)
 endif(NOT Java_JAVAH_EXECUTABLE)
 
 set(CMAKE_JNI_TARGET TRUE)
